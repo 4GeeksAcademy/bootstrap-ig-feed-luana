@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Photo Feed</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand"><i class="fa fa-instagram"></i> Instagram</a>
+            <form class="d-flex" role="search">
+                <button type="button" class="btn btn-success mx-2" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Create New Post
+                </button>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa fa-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-light dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Acessibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a New Post</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label for="">Caption:</label>
+                    <textarea class="form-control" placeholder="Add the caption of your post here"></textarea>
+                    <button type="button" class="btn btn-light m-1"><i class="fa fa-camera"></i></button>
+                    <button type="button" class="btn btn-light"><i class="fa fa-map-pin"></i></button>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    fin del navbar    -->
+
+    <!-- nav y tabs -->
+    <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i
+                    class="fa fa-th"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i
+                    class="fa fa-square"></i></button>
+        </li>
+    </ul>
+    <div class="tab-content d-flex justify-content-center" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+            tabindex="0">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <img src="https://media.wired.com/photos/65caa6f6f553745750c04769/master/w_2560%2Cc_limit/elephant-congo-science-GettyImages-630005418.jpg"
+                            class="img-thumbnail">
+                    </div>
+                    <div class="col">
+                        <img src="https://media.wired.com/photos/593261cab8eb31692072f129/master/pass/85120553.jpg"
+                            class="img-thumbnail" alt="">
+                    </div>
+                    <div class="col">
+                        <img src="https://widnr.widen.net/content/4uvhi6lfih/jpeg/iStock-1422593791.jpeg?w=568&h=378&keep=c&crop=yes&color=ffffffff&quality=80"
+                            class="img-thumbnail" alt="">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <img src="https://s7ap1.scene7.com/is/image/destqueensland/teq/consumer/global/images/destinations/sunshine-coast/blog-images/editorial-hero-banner/2018_SC_Koala_Wildlife_Australiazoo.jpg?fit=wrap&fmt=webp&qlt=75&wid=1200"
+                            class="img-thumbnail">
+                    </div>
+                    <div class="col">
+                        <img src="https://images.theconversation.com/files/290710/original/file-20190903-175663-lqb3z6.jpg?ixlib=rb-4.1.0&rect=48%2C0%2C5422%2C3603&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip"
+                            class="img-thumbnail" alt="">
+                    </div>
+                    <div class="col">
+                        <img src="https://deframedia.blog.gov.uk/wp-content/uploads/sites/208/2021/03/cheetah-620x413.jpg"
+                            class="img-thumbnail" alt="">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <img src="https://www.timeforkids.com/wp-content/uploads/2023/11/G3G5_231117_bear_steps.jpg?w=1024"
+                            class="img-thumbnail">
+                    </div>
+                    <div class="col">
+                        <img src="https://www.bu.edu/files/2022/03/feat-iStock-1333294167.jpg" class="img-thumbnail"
+                            alt="">
+                    </div>
+                    <div class="col">
+                        <img src="https://cdn.pixabay.com/photo/2022/06/07/07/46/common-zebra-7247714__340.jpg"
+                            class="img-thumbnail" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <div class=" mt-3 mb-3">
+                <div class="card p-2" style="width: 35rem;">
+                    <div class="d-flex justify-content-between">
+                        <h5>Mi amigo Dumbo</h5>
+                        <h6>25/12</h6>
+                    </div>
+
+                    <img src="https://media.wired.com/photos/65caa6f6f553745750c04769/master/w_2560%2Cc_limit/elephant-congo-science-GettyImages-630005418.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"> <strong>Likes 204</strong></p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus totam
+                            vel soluta eaque, quasi asperiores.</p>
+                    </div>
+                </div>
+
+                <div class="card mt-3 p-2" style="width: 35rem;">
+                    <div class="d-flex justify-content-between">
+                        <h5>Un pequeño zorro</h5>
+                        <h6>27/12</h6>
+                    </div>
+                    <img src="https://media.wired.com/photos/593261cab8eb31692072f129/master/pass/85120553.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"> <strong>Likes 211</strong></p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus totam
+                            vel soluta eaque, quasi asperiores.</p>
+                    </div>
+                </div>
+
+                <div class="card mt-3 p-2" style="width: 35rem;">
+                    <div class="d-flex justify-content-between">
+                        <h5>Familia de Mapaches</h5>
+                        <h6>12/04</h6>
+                    </div>
+                    <img src="https://widnr.widen.net/content/4uvhi6lfih/jpeg/iStock-1422593791.jpeg?w=568&h=378&keep=c&crop=yes&color=ffffffff&quality=80"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"> <strong>Likes 245</strong></p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus totam
+                            vel soluta eaque, quasi asperiores.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
